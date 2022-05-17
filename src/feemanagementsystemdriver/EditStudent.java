@@ -116,7 +116,7 @@ public class EditStudent extends JFrame {
 
             JLabel lblContactNo = new JLabel("Contact No:");
 
-            JButton btnAddAccountant = new JButton("Update Student");
+            JButton btnAddAccountant = new JButton("Update");
             btnAddAccountant.setFont(new Font("Tahoma", Font.PLAIN, 20));
             btnAddAccountant.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
@@ -235,8 +235,8 @@ public class EditStudent extends JFrame {
                                     .addContainerGap(383, Short.MAX_VALUE))
                             .addGroup(gl_contentPane.createSequentialGroup()
                                     .addGap(128)
-                                    .addComponent(btnAddAccountant, GroupLayout.PREFERRED_SIZE, 145, GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18)
+                                    .addComponent(btnAddAccountant, GroupLayout.PREFERRED_SIZE, 160, GroupLayout.PREFERRED_SIZE)
+                                    .addGap(30)
                                     .addComponent(btnBack)
                                     .addContainerGap(78, Short.MAX_VALUE))
                             .addGroup(gl_contentPane.createSequentialGroup()
