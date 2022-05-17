@@ -77,7 +77,7 @@ public class AccountantSection extends JFrame{
         btnDueFee.setFont(new Font("Tahoma", Font.PLAIN, 20));
         btnDueFee.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-//                DueFee.startFrame();
+               DueFee.startFrame();
             }
         });
 

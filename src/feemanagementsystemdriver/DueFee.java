@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package feemanagementsystemdriver;
 
 import java.awt.EventQueue;
@@ -15,7 +11,7 @@ public class DueFee extends JFrame {
 	static DueFee frame;
 	public DueFee() {
 		//Code to view data in JTable
-		List<Student> list=StudentDao.due();
+		List<Student> list=StudentDB.due();
 		int size=list.size();
 		
 		String data[][]=new String[size][12];
