@@ -60,7 +60,7 @@ public class AccountantSection extends JFrame{
         btnViewStudent.setFont(new Font("Tahoma", Font.PLAIN, 20));
         btnViewStudent.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                    ViewStudent.startFrame();
+                ViewStudent.startFrame();
             }
         });
 
@@ -68,7 +68,7 @@ public class AccountantSection extends JFrame{
         btnEditStudent.setFont(new Font("Tahoma", Font.PLAIN, 20));
         btnEditStudent.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
-                //EditStudent.main(new String[]{});
+                EditStudent.startFrame();
                 frame.dispose();
             }
         });
@@ -77,7 +77,7 @@ public class AccountantSection extends JFrame{
         btnDueFee.setFont(new Font("Tahoma", Font.PLAIN, 20));
         btnDueFee.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                    //DueFee.main(new String[]{});
+//                DueFee.startFrame();
             }
         });
 

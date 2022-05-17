@@ -123,7 +123,7 @@ public class AddStudent extends JFrame {
 
                     Student s=new Student(name,email,course,fee,paid,due,address,city,state,country,contactno);
                     int status=StudentDB.save(s);
-//dsa
+
                     if(status>0){
                             JOptionPane.showMessageDialog(AddStudent.this,"Student added successfully!");
                             textField.setText("");textField_1.setText("");textField_2.setText("");
