@@ -96,11 +96,11 @@ public class EditStudent extends JFrame {
 				int rollno=Integer.parseInt(textField_10.getText());
 				
 				Student s=new Student(rollno,name,email,course,fee,paid,due,address,city,state,country,contactno);
-				int status=StudentDao.update(s);
+				int status=StudentDB.update(s);
 				
 				if(status>0){
 					JOptionPane.showMessageDialog(EditStudent.this,"Student updated successfully!");
-					AccountantSection.main(new String[]{});
+					AccountantSection.startFrame();
 					frame.dispose();
 				}else{
 					JOptionPane.showMessageDialog(EditStudent.this,"Sorry, Unable to add student!");
@@ -143,7 +143,7 @@ public class EditStudent extends JFrame {
 		JButton btnBack = new JButton("back");
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				AccountantSection.main(new String[]{});
+				AccountantSection.startFrame();
 				frame.dispose();
 			}
 		});
@@ -163,7 +163,7 @@ public class EditStudent extends JFrame {
 					JOptionPane.showMessageDialog(EditStudent.this,"Please enter rollno first!");
 				}else{
 				int rollno=Integer.parseInt(srollno);
-				Student s=StudentDao.getStudentByRollno(rollno);
+				Student s=StudentDB.getStudentByRollno(rollno);
 				textField.setText(s.getName());
 				textField_1.setText(s.getEmail());
 				textField_2.setText(s.getCourse());
